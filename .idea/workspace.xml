@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbe2dd49-7aab-4ad3-b73a-a2d142a1ed0f" name="Default Changelist" comment="" />
+    <list default="true" id="bbe2dd49-7aab-4ad3-b73a-a2d142a1ed0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Flyingsprite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spaceshooter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/crate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fighter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1gFxcM0DFwiwJBV4AtnyxzdSuMs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +37,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
   </component>
   <component name="RunManager">
@@ -107,26 +123,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="148" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1597724581173" />
-    <state width="1345" height="190" key="GridCell.Tab.0.bottom" timestamp="1597826817762">
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom" timestamp="1597877826137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="190" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
-    <state width="1345" height="190" key="GridCell.Tab.0.center" timestamp="1597826817762">
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597877826137" />
+    <state width="1345" height="190" key="GridCell.Tab.0.center" timestamp="1597877826137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="190" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
-    <state width="1345" height="190" key="GridCell.Tab.0.left" timestamp="1597826817762">
+    <state width="1345" height="190" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597877826137" />
+    <state width="1345" height="190" key="GridCell.Tab.0.left" timestamp="1597877826137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="190" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
-    <state width="1345" height="190" key="GridCell.Tab.0.right" timestamp="1597826817762">
+    <state width="1345" height="190" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597877826137" />
+    <state width="1345" height="190" key="GridCell.Tab.0.right" timestamp="1597877826137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="190" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
-    <state x="721" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1597816817343">
+    <state width="1345" height="190" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597877826137" />
+    <state x="721" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1597872401190">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="721" y="220" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1597816817343" />
+    <state x="721" y="220" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1597872401190" />
     <state x="766" y="31" key="refactoring.ChangeSignatureDialog" timestamp="1597729649778">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
