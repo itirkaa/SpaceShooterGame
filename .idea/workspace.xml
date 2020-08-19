@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbe2dd49-7aab-4ad3-b73a-a2d142a1ed0f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gFxcM0DFwiwJBV4AtnyxzdSuMs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="MarioPackage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Arijit Aakriti\Anaconda3\envs\arcadenv\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MarioPackage" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbe2dd49-7aab-4ad3-b73a-a2d142a1ed0f" name="Default Changelist" comment="" />
+      <created>1597724219333</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597724219333</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="39" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597726482427">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="39" width="1092" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1597726482427" />
+    <state x="463" y="148" key="FileChooserDialogImpl" timestamp="1597724581173">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="148" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1597724581173" />
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom" timestamp="1597826817762">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="190" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
+    <state width="1345" height="190" key="GridCell.Tab.0.center" timestamp="1597826817762">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="190" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
+    <state width="1345" height="190" key="GridCell.Tab.0.left" timestamp="1597826817762">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="190" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
+    <state width="1345" height="190" key="GridCell.Tab.0.right" timestamp="1597826817762">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="190" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597826817762" />
+    <state x="721" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1597816817343">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="721" y="220" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1597816817343" />
+    <state x="766" y="31" key="refactoring.ChangeSignatureDialog" timestamp="1597729649778">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="766" y="31" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1597729649778" />
+    <state x="710" y="89" key="search.everywhere.popup" timestamp="1597823621077">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="710" y="89" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1597823621077" />
+  </component>
+</project>
