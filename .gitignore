@@ -1,1 +1,4 @@
 .idea
+space_shootout.egg-info/
+dist/
+setup.py
