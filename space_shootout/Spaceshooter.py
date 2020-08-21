@@ -1,11 +1,15 @@
 import arcade
 from random import randint
-from Flyingsprite import FlyingSprite
+from .Flyingsprite import FlyingSprite
 
 # Constants
-CLOUD_SCALING = 0.1
-ENEMY_SCALING = 0.08
-PLAYER_SCALING = 0.13
+SCREEN_WIDTH = 600
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "Space Shooter"
+
+JET_SCALING: float = 0.6
+LASER_SCALING: float = 0.7
+STAR_SCALING: float = 0.1
 
 
 # Space Shooter Game Window Class
@@ -16,12 +20,12 @@ class SpaceShooter(arcade.Window):
     If the two collide, the game ends
     """
 
-    def __init__(self, width, height, title):
+    def __init__(self, width=SCREEN_WIDTH, height=SCREEN_HEIGHT):
         """Initialize the window
         """
 
         # Calling parent class
-        super().__init__(width, height, title)
+        super().__init__(width, height, "Space Shoutout")
 
         self.paused = False
         self.game_over = False
@@ -32,7 +36,7 @@ class SpaceShooter(arcade.Window):
 
         # Setting up empty sprite(objects on the screen) lists
         self.enemies_list = arcade.SpriteList()  # Stores generated enemies
-        self.cloud_list = arcade.SpriteList()  # Stores clouds
+        self.star_list = arcade.SpriteList()  # Stores stars
         self.all_sprites = arcade.SpriteList()  # Stores all the sprites
 
     def setup(self):
@@ -40,20 +44,20 @@ class SpaceShooter(arcade.Window):
         """
 
         # Setting background color
-        arcade.set_background_color(arcade.color.SKY_BLUE)
+        arcade.set_background_color(arcade.color.DARK_BLUE)
 
         # Setting up the player
-        # Image source: pngitem.com
-        self.player = arcade.Sprite("images/spaceship.png", PLAYER_SCALING)  # Player image
-        self.player.center_y = self.height / 2  # placing player in the middle(Vertical)
-        self.player.left = 10  # Placing player to left of the screen
+        self.player = arcade.Sprite(":resources:images/space_shooter/playerShip1_green.png",
+                                    JET_SCALING)  # Player image
+        self.player.center_x = self.width / 2  # placing player in the middle(Vertical)
+        self.player.bottom = 10  # Placing player to left of the screen
         self.all_sprites.append(self.player)  # Appending player to all sprites list
 
         # Spawn a new enemy every 0.25 seconds
         arcade.schedule(self.add_enemy, 0.25)
 
-        # Spawn a new cloud every second
-        arcade.schedule(self.add_cloud, 1)
+        # Spawn a new star every second
+        arcade.schedule(self.add_star, 1.5)
 
     def add_enemy(self, delta_time: float):
         """Adds a new enemy to the screen
@@ -63,51 +67,51 @@ class SpaceShooter(arcade.Window):
         """
 
         # Create new enemy sprite
-        # Image source: seekpng.com
-        enemy = FlyingSprite("images/jet.png", ENEMY_SCALING)
+        enemy = FlyingSprite(":resources:images/space_shooter/laserRed01.png", LASER_SCALING)
+        enemy.angle = 180
 
         # Set position to a random height and off screen right
-        enemy.left = randint(self.width, self.width + 80)
-        enemy.top = randint(10, self.height - 10)
+        enemy.left = randint(10, self.width - 10)
+        enemy.top = randint(self.height, self.height + 80)
 
         # Set random speed
-        enemy.velocity = (randint(-10, -2), 0)
+        enemy.velocity = (0, randint(-10, -2))
 
         # Add it to enemies list
         self.enemies_list.append(enemy)
         self.all_sprites.append(enemy)
 
-    def add_cloud(self, delta_time: float):
-        """Adds a new cloud to the screen
+    def add_star(self, delta_time: float):
+        """Adds a new star to the screen
         :param delta_time: How much time has passed since the last call
         """
 
-        # Creating a new cloud Flying sprite
-        # Image Source: toppng.com
-        cloud = FlyingSprite("images/cloud.png", 0.1)
+        # Creating a new star Flying sprite
+        star = FlyingSprite(":resources:images/items/star.png", STAR_SCALING)
 
         # Set position to a random height and off screen right
-        cloud.left = randint(self.width, self.width + 80)
-        cloud.top = randint(10, self.height - 10)
+        star.left = randint(10, self.width - 10)
+        star.top = randint(self.height, self.height + 80)
 
         # Set random speed
-        cloud.velocity = (randint(-3, -1), 0)
+        star.velocity = (0, -0.5)
 
         # Add it to enemies list
-        self.cloud_list.append(cloud)
-        self.all_sprites.append(cloud)
+        self.star_list.append(star)
+        self.all_sprites.append(star)
 
     def on_key_press(self, symbol: int, modifiers: int):
         """Handle user keyboard input
         Q: Quit
-        P: Pause/Unpause
+        P: Pause/Un-pause
         I/J/K//L: Move Up, Left, Down, Right
         Arrows: Move Up, Left, Down, Right
 
         :arg symbol: which key was pressed
         :arg modifiers: which modifiers were pressed
         """
-
+        if self.game_over and symbol == arcade.key.ENTER:
+            arcade.close_window()
         if symbol == arcade.key.Q:
             # Quit the game
             arcade.close_window()
@@ -183,10 +187,12 @@ class SpaceShooter(arcade.Window):
         # Clearing the screen and drawing
         arcade.start_render()
         self.all_sprites.draw()
-        arcade.draw_text(str(self.timer), 10, 10, arcade.color.WHITE)
+
+        score = round(self.timer * 10)
+        arcade.draw_text(f"Score: {score}", 10, 10, arcade.color.WHITE)
 
         # If game is over, then display the message along with scores
         if self.game_over:
             message = f"Game Over!\nYou Scored: {round(self.timer * 10)}"
-            arcade.draw_text(message, self.width / 2, self.height / 2, arcade.color.BLACK, 25,
+            arcade.draw_text(message, self.width / 2, self.height / 2, arcade.color.WHITE, 25,
                              align="center", anchor_x="center", anchor_y="center")

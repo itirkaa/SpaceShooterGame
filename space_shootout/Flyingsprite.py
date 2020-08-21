@@ -16,5 +16,5 @@ class FlyingSprite(arcade.Sprite):
         super().update()
 
         # Remove if sprite goes off screen
-        if self.right < 0:
+        if self.bottom < 0:
             self.remove_from_sprite_lists()
